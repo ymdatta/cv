@@ -1,0 +1,104 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Mohana}{Datta Yelugoti}
+\email{Mohana.Datta@iiitb.org}                               % optional, remove / comment the line if not wanted
+\homepage{https://ymdatta.github.io/}                         % optional, remove / comment the line if not wanted
+\social[github]{ymdatta}                              % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2016--2021}{Integrated Mtech(iMtech) in Computer Science}{International Institute of Information Technology}{Bangalore (IIIT-B)}{\textit{CGPA 3.42}}{}  % arguments 3 to 6 can be left empty
+\cventry{2012--2014}{Andhra Pradesh Board Of Intermediate Education}{Sri Chaitanya Junior Kalasala}{Hyderabad India}{\textit{Percentage -- 97.4\%}}{}
+\cventry{2011--2012}{Andhra Pradesh Board Of Secondary Education}{Sri Gurudatta High School}{Hyderabad, India}{\textit{GPA -- 9.8/10.0}}{}
+
+\section{Technical skills}
+\cvitem{\textit{Languages}} {C, Java, Python, MySQL, Git}
+
+\cvitem{\textit{Frameworks}} {Scikit-learn, openCV}
+
+\cvitem{\textit{OS}} {Linux, Windows}
+
+\cvitem{\textit{Familiar}} {Bash Scripting, LaTeX}
+
+
+
+\section{Experience}
+\cventry{May'18--July'18}{Research Intern}{International Institute Of Information Technology}{Bangalore}{Prof. Dr. Dinesh Babu Jayagopi}{{}%
+\begin{itemize}%
+\item Designed and Developed Bag Of Visual Words(BOV) model for Image Classification, was able to achieve accuracy to nearly 80\% for 5 categories.
+\item Also worked on how using Fisher Vector's improves the BOV Accuracy of the classification model.\newline
+Code: https://github.com/ymdatta/BagOfVisualWords \textit{python, opencv, scikit-learn}
+\end{itemize}}
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+
+\section{Projects}
+\cventry{May'17--June'17}{XKCD-Password Generator}{}{}{}{{}
+Password Generator inspried from \href{https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength}{xkcd strip}. Creates a password of various word sizes based on the frequently used words. These frequently used words are taken from the \textbf{Reddit's} comments. \newline
+Code: \href{https://github.com/ymdatta/xkcd_password}{github/xkcd\_password} \textit{python}
+}
+
+\section{Past Academic Achievements}
+\cventry{2016}{Joint Engineering Entrance Exam(JEE)}{Cleared both Mains and advanced levels of JEE, secured rank of \textbf{3654} in JEE-Main out of nearly 120,000 students}{}{}{}
+\cventry{2016}{Telangana State Engineering, Agriculture \& Medical Common Test(TS-EAMCET)}
+{Ranked in Top 1\% (among 125,000 candiates) and secured a rank below 1000}{}{}{}
+
+
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+\end{document}
+
+
+%% end of file `template.tex'.
